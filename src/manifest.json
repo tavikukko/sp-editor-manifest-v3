@@ -2,6 +2,12 @@
   "manifest_version": 3,
   "name": "SP Editor V3 Manifest",
   "description": "SP Editor using v3 manifest",
+  "permissions": [
+    "tabs"
+  ],
+  "optional_permissions": [
+    "activeTab"
+  ],
   "options_page": "options.html",
   "background": {
     "service_worker": "background.bundle.js"
@@ -38,5 +44,10 @@
       ],
       "matches": []
     }
-  ]
+  ],
+  "sandbox": {
+    "pages": [
+      "Sandbox.html"
+    ]
+  }
 }

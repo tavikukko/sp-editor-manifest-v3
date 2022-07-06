@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        window.addEventListener('message', (ev) => {
+            let data = JSON.parse(ev.data);
+            let methodString = data.method;
+            let token = data.token;
+            let siteUrl = data.siteUrl;
+
+            let postedFunction = new Function(methodString);
+            postedFunction.call(this, token, siteUrl);
+        })
+    </script>
+</head>
+
+<body>
+    <label>Test</label>
+</body>

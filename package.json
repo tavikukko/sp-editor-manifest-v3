@@ -13,7 +13,10 @@
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "dependencies": {
+    "@fluentui/react": "^8.77.2",
     "@hot-loader/react-dom": "^17.0.2",
+    "mgwdev-m365-helpers": "0.0.6",
+    "msal": "^1.4.16",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0"
